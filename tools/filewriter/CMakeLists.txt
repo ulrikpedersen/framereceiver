@@ -13,7 +13,8 @@ file(GLOB APP_SOURCES DataBlock.cpp
                       IFrameCallback.cpp 
                       SharedMemoryController.cpp 
                       SharedMemoryParser.cpp 
-                      SocketHandler.cpp )
+                      SocketHandler.cpp
+                      PushPullReceiver.cpp )
 
 file(GLOB TEST_SOURCES *Test*.cpp)
 
