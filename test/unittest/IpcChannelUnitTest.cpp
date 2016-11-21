@@ -24,6 +24,8 @@ struct TestFixture
     ~TestFixture()
     {
         BOOST_TEST_MESSAGE("Tear down test fixture");
+        recv_channel.close();
+        send_channel.close();
     }
 
     FrameReceiver::IpcChannel send_channel;
