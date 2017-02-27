@@ -16,4 +16,5 @@ install:
   - cmake -DHDF5_ROOT=$HDF5_ROOT ..
   - cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
   - ls *.json
+  - cppcheck --help
   - cppcheck --project=compile_commands.json
